@@ -1,0 +1,14 @@
+{
+    "branches": [
+        {
+            "name": "CSE",
+            "cutoff_2020": 1234,
+            "link": "https://www.website.org"
+        },
+        {
+            "name": "EE",
+            "cutoff_2020": 1334,
+            "link": "www.website.org"
+        }
+    ]
+}
