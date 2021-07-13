@@ -33,7 +33,7 @@ ipWords = ["ip", "industrial", "production",
 
 itWords = ["IT", "Information Technology", "InfoTech"]
 
-mechWords = ["mech", "mechanical", "MechE", "Mechanical Engineering"]
+mechWords = ["mech", "mechanical", "MechE", "Mechanical Engineering", "ME"]
 
 mechxWords = ["mechatronics", "MechX", "MechT", "Mechatronics Engineering"]
 

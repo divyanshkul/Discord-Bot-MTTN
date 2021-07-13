@@ -47,7 +47,7 @@ def GetCutoff(branch):
         return branchMessage
 
     else:
-        return "Sorry you have entered !"
+        return "Sorry! You have entered an invalid command. Try .help to get the list of commands"
 
 
 @bot.event
