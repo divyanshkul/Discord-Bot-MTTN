@@ -4,7 +4,7 @@
             "name": "CSE",
             "cutoff_2020": 1147,
             "cutoff_2019": 1819,
-            "link": "https://www.manipalthetalk.org/"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/CSE/BTech-CSE_2020.pdf"
         },
         {
             "name": "IT",
@@ -16,97 +16,101 @@
             "name": "CCE",
             "cutoff_2020": 3042,
             "cutoff_2019": 3844,
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ict_courseoutline/Computer%20and%20Communication_2018.pdf"
         },
         {
             "name": "DSE",
             "cutoff_2020": 3653,
             "cutoff_2019": "NEW BRANCH",
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/DSE_CourseStructureMIT2020.pdf"
         },
         {
             "name": "ECE",
             "cutoff_2020": 5695,
             "cutoff_2019": 6483,
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ece-course-outline/B.Tech%20ECE%20Course%20outline.pdf"
         },
         {
             "name": "EEE",
             "cutoff_2020": 10978,
             "cutoff_2019": 13900,
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/eee_dept_docs/Electrical%20and%20Electronics_OUTLINE_2020.pdf"
+        },
+        {
+            "name": "Mechatronics",
+            "cutoff_2020": 17362,
+            "cutoff_2019": 14985,
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/Mechatronics_Engineering_syllabus/Mechatronics_UG_new.pdf"
+        },
+        {
+            "name": "Mechanical",
+            "cutoff_2020": 18581,
+            "cutoff_2019": 16790,
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ipe-rb/Mechanical.pdf"
         },
         {
             "name": "EIE",
             "cutoff_2020": 19682,
             "cutoff_2019": 34700,
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ice/Electronics%20and%20Instrumentation_2020.pdf"
         },
         {
-            "name": "Auto",
-            "cutoff_2020": 26303,
-            "cutoff_2019": 30575,
-            "link": "www.website.org"
-        },
-        {
-            "name": "Aero",
+            "name": "Aeronautical",
             "cutoff_2020": 19266,
             "cutoff_2019": 21099,
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/B.Tech.%20Aeronautical-Structure.pdf"
         },
         {
-            "name": "Biomed",
-            "cutoff_2020": 0,
-            "cutoff_2019": 0,
-            "link": "www.website.org"
+            "name": "Automobile",
+            "cutoff_2020": 26303,
+            "cutoff_2019": 30575,
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/B.Tech.%20Automobile_Structure.pdf"
         },
         {
-            "name": "Biotech",
+            "name": "Biotechnology",
             "cutoff_2020": 33875,
             "cutoff_2019": 0,
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/biotech-syllabus/B.Tech-%20Biotechnology.pdf"
         },
+        
+        {
+            "name": "Biomedical",
+            "cutoff_2020": 0,
+            "cutoff_2019": 0,
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/biomedical/Biomedical.pdf"
+        },
+        
         {
             "name": "Chemical",
             "cutoff_2020": 0,
             "cutoff_2019": 0,
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/chemical-course-outline/Chemical.pdf"
         },
         {
             "name": "Civil",
             "cutoff_2020": 0,
             "cutoff_2019": 0,
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/civil_engineering/Civil_New_2018.pdf"
         },
         {
-            "name": "IP",
+            "name": "Industrial Production",
             "cutoff_2020": 0,
             "cutoff_2019": 0,
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ipe-rb/Industrial%20Production.pdf"
         },
         {
-            "name": "Mech",
-            "cutoff_2020": 18581,
-            "cutoff_2019": 16790,
-            "link": "www.website.org"
+            "name": "Media Technology",
+            "cutoff_2020": 0,
+            "cutoff_2019": 0,
+            "link": "https://manipal.edu/mit/program-list/btech/btech-printing-technology.html"
         },
-        {
-            "name": "Mechx",
-            "cutoff_2020": 17362,
-            "cutoff_2019": 14985,
-            "link": "www.website.org"
-        },
+        
         {
             "name": "AI",
             "cutoff_2020": "NEW BRANCH",
             "cutoff_2019": "NEW BRANCH",
-            "link": "www.website.org"
-        },
-        {
-            "name": "Media",
-            "cutoff_2020": 0,
-            "cutoff_2019": 0,
-            "link": "www.website.org"
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/CSE/2021_CSE_AI&ML_Course%20Structure.pdf"
         }
+        
     ]
 }

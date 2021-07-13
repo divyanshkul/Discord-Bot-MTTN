@@ -7,9 +7,11 @@ biomedWords = ["biomed", "biomedical",
 
 biotechWords = ["biotech", "BioT", "Bio Technology", "biotechnology"]
 
-civilWords = ["civil", "Civil Engineering"]
 
 chemWords = ["Chem", "Chemical", "Chemistry", "Chemical Engineering"]
+
+civilWords = ["civil", "Civil Engineering"]
+
 
 cceWords = ["cce", "Communication and Computer Engineering", "cc"]
 
@@ -31,8 +33,10 @@ ipWords = ["ip", "industrial", "production",
 
 itWords = ["IT", "Information Technology", "InfoTech"]
 
-mechWords = ["mech", "nechanical", "MechE", "Mechanical Engineering"]
+mechWords = ["mech", "mechanical", "MechE", "Mechanical Engineering"]
 
 mechxWords = ["mechatronics", "MechX", "MechT", "Mechatronics Engineering"]
 
 mediaWords = ["MediaTech", "Media Tech", "Media Technology", "Media"]
+
+aiWords = ["AI", "CSAI", "Articial Intelligence"]

@@ -1,6 +1,9 @@
 import discord
 from discord.ext import commands
 import json
+import pandas as pd
+import tabulate
+from correctbranch import CorrectedBranch
 from models import *
 
 databaseFile = open('database.json',)
@@ -12,8 +15,11 @@ data = json.load(databaseFile)
 # Add Random facts about Manipal
 
 
-bot = commands.Bot(command_prefix='/',
+bot = commands.Bot(command_prefix='.', help_command=None,
                    description="This bot returns the cutoffs")
+# df = pd.DataFrame.from_dict(data['branches'])
+# print(df)
+facts = []
 
 
 def GetCutoff(branch):
@@ -22,17 +28,18 @@ def GetCutoff(branch):
     print(len(data['branches']))
     cutoffSearch = 0
     for i in data['branches']:
-        #print("Current i is", i)
+        # print("Current i is", i)
 
         if(i['name'].lower() == str(branch).lower()):
-            #print("if wala i is", i)
+            # print("if wala i is", i)
             cutoffSearch = i
         # else:
         #     print("asdasdasd i is", i)
 
     if(cutoffSearch != 0):
         branchString = f"Cutoffs for the branch **{branch.upper()}**: \n\n2020:  **{str(cutoffSearch['cutoff_2020'])}.** \n2019: **{str(cutoffSearch['cutoff_2019'])}.**"
-        linkString = f"Thse course outline for this course can be found at: **{cutoffSearch['link']}**"
+        print(f"<{cutoffSearch['link']}>")
+        linkString = f"The course outline for this course can be found at: <{cutoffSearch['link']}>"
         branchMessage = branchString + "\n\n" + linkString
         return branchMessage
 
@@ -40,28 +47,10 @@ def GetCutoff(branch):
         return "Sorry you have entered !"
 
 
-def CorrectedBranch(enteredBranch):
-    enteredBranch = enteredBranch.lower()
-    enteredBranch = str(enteredBranch)
-    print("current EnteredBranch is " + enteredBranch)
-
-    if(enteredBranch in [x.lower() for x in aeroWords]):
-        enteredBranch = "Aero"
-
-    elif(enteredBranch in [x.lower() for x in cseWords]):
-        print("Word mila array me")
-        enteredBranch = "cse"
-
-    elif(enteredBranch in [x.lower() for x in eeWords]):
-        enteredBranch = "eee"
-
-    print("The corrected is " + enteredBranch)
-    return enteredBranch
-
-
 @bot.event
 async def on_ready():
     print("I am alive on the MTTN Server")
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='https://bit.ly/MTTNmovie'))
 
 
 @bot.command()
@@ -88,15 +77,31 @@ async def fact(ctx):
     await ctx.send("is Chirag OP?")
 
 
+@bot.command()
+async def help(ctx):
+    helpString = f"```Mention me @MTTN Bot to get the branch wise cutoff table \n\n.cutoff branch -> Get the cutoff and course structure \n\nEg: .cutoff EE --> Returns the information about Electrical and Electronics```"
+    await ctx.channel.send("Here is a list of commands that you can use:" + helpString)
+
+
 @bot.listen()
 async def on_message(message):
     if bot.user.mentioned_in(message):
-        await message.channel.send("Hey!" + message.author.mention + "\nI am your friendly neightbourhood bot. Here is the cutoffs table for the last year for each branch")
+        await message.channel.send("Hey! " + message.author.mention + "\nI am your friendly neightbourhood bot. Here is the cutoffs table for the last year for each branch")
+        df = pd.DataFrame.from_dict(data['branches'])
+        df = df.drop(['link', 'cutoff_2019'], axis=1)
+        df.columns = ["Branch Name", "2020 Cutoff"]
+        df.reset_index(drop=True, inplace=True)
+        await message.channel.send(f"```{df}``` \n0 -->  indicates that the no. of seats quota wasn't filled for the particular branch and anyone was eligible for them")
+        await message.channel.send("**NOTE:** The data is not 100\% accurate")
+
+        # df = pd.json_normalize(data['branches'])
+        # print(df)
+
         # print table
         # await message.channel.send(message.author.mention)
 
 
-bot.run('token')
+bot.run('ODY0MjA4NDI4NjE2MjUzNDkw.YOyG0Q.sVWAj5GgPUrcDt7xMj8sZUnVSq4')
 # @bot.event
 # async def on_message(message):
 #     if bot.user.mentioned_in(message):
