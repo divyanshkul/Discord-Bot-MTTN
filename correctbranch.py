@@ -10,27 +10,21 @@ def CorrectedBranch(enteredBranch):
         enteredBranch = "Aeronautical"
 
     elif(enteredBranch in [x.lower() for x in autoWords]):
-        print("Word mila array me")
         enteredBranch = "Automobile"
 
     elif(enteredBranch in [x.lower() for x in biomedWords]):
-        print("Word mila array me")
         enteredBranch = "Biomedical"
 
     elif(enteredBranch in [x.lower() for x in biotechWords]):
-        print("Word mila array me")
         enteredBranch = "Biotechnology"
 
     elif(enteredBranch in [x.lower() for x in chemWords]):
-        print("Word mila array me")
         enteredBranch = "Chemical"
 
     elif(enteredBranch in [x.lower() for x in civilWords]):
-        print("Word mila array me")
         enteredBranch = "Civil"
 
     elif(enteredBranch in [x.lower() for x in cceWords]):
-        print("Word mila array me")
         enteredBranch = "CCE"
 
     elif(enteredBranch in [x.lower() for x in cseWords]):

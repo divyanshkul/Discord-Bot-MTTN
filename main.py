@@ -42,7 +42,8 @@ def GetCutoff(branch):
         branchString = f"Cutoffs for the branch **{branch.upper()}**: \n\n2020:  **{str(cutoffSearch['cutoff_2020'])}.** \n2019: **{str(cutoffSearch['cutoff_2019'])}.**"
         print(f"<{cutoffSearch['link']}>")
         linkString = f"The course outline for this course can be found at: <{cutoffSearch['link']}>"
-        branchMessage = branchString + "\n\n" + linkString
+        zeroString = f"0 -->  indicates that the no. of seats quota wasn't filled for the particular branch and anyone was eligible for them"
+        branchMessage = branchString + "\n" + zeroString + "\n\n" + linkString
         return branchMessage
 
     else:
@@ -76,7 +77,7 @@ async def cutoff(ctx, *, arg):
 
 @bot.command()
 async def fact(ctx):
-    await ctx.send("is Chirag OP?")
+    await ctx.send("Facts: Coming soon!")
 
 
 @bot.command()
@@ -95,6 +96,7 @@ async def on_message(message):
         df.reset_index(drop=True, inplace=True)
         await message.channel.send(f"```{df}``` \n0 -->  indicates that the no. of seats quota wasn't filled for the particular branch and anyone was eligible for them")
         await message.channel.send("**NOTE:** The data is not 100\% accurate")
+        await message.channel.send(' You can also use the command **".cutoff branchname"** to get the information of a particular branch \n Or use the ".help" command to get help ')
 
         # df = pd.json_normalize(data['branches'])
         # print(df)
