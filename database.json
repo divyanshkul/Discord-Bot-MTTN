@@ -2,12 +2,110 @@
     "branches": [
         {
             "name": "CSE",
-            "cutoff_2020": 1234,
-            "link": "https://www.website.org"
+            "cutoff_2020": 1147,
+            "cutoff_2019": 1819,
+            "link": "https://www.manipalthetalk.org/"
         },
         {
-            "name": "EE",
-            "cutoff_2020": 1334,
+            "name": "IT",
+            "cutoff_2020": 2234,
+            "cutoff_2019": 2732,
+            "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ict_courseoutline/Information%20Technology_2018.pdf"
+        },
+        {
+            "name": "CCE",
+            "cutoff_2020": 3042,
+            "cutoff_2019": 3844,
+            "link": "www.website.org"
+        },
+        {
+            "name": "DSE",
+            "cutoff_2020": 3653,
+            "cutoff_2019": "NEW BRANCH",
+            "link": "www.website.org"
+        },
+        {
+            "name": "ECE",
+            "cutoff_2020": 5695,
+            "cutoff_2019": 6483,
+            "link": "www.website.org"
+        },
+        {
+            "name": "EEE",
+            "cutoff_2020": 10978,
+            "cutoff_2019": 13900,
+            "link": "www.website.org"
+        },
+        {
+            "name": "EIE",
+            "cutoff_2020": 19682,
+            "cutoff_2019": 34700,
+            "link": "www.website.org"
+        },
+        {
+            "name": "Auto",
+            "cutoff_2020": 26303,
+            "cutoff_2019": 30575,
+            "link": "www.website.org"
+        },
+        {
+            "name": "Aero",
+            "cutoff_2020": 19266,
+            "cutoff_2019": 21099,
+            "link": "www.website.org"
+        },
+        {
+            "name": "Biomed",
+            "cutoff_2020": 0,
+            "cutoff_2019": 0,
+            "link": "www.website.org"
+        },
+        {
+            "name": "Biotech",
+            "cutoff_2020": 33875,
+            "cutoff_2019": 0,
+            "link": "www.website.org"
+        },
+        {
+            "name": "Chemical",
+            "cutoff_2020": 0,
+            "cutoff_2019": 0,
+            "link": "www.website.org"
+        },
+        {
+            "name": "Civil",
+            "cutoff_2020": 0,
+            "cutoff_2019": 0,
+            "link": "www.website.org"
+        },
+        {
+            "name": "IP",
+            "cutoff_2020": 0,
+            "cutoff_2019": 0,
+            "link": "www.website.org"
+        },
+        {
+            "name": "Mech",
+            "cutoff_2020": 18581,
+            "cutoff_2019": 16790,
+            "link": "www.website.org"
+        },
+        {
+            "name": "Mechx",
+            "cutoff_2020": 17362,
+            "cutoff_2019": 14985,
+            "link": "www.website.org"
+        },
+        {
+            "name": "AI",
+            "cutoff_2020": "NEW BRANCH",
+            "cutoff_2019": "NEW BRANCH",
+            "link": "www.website.org"
+        },
+        {
+            "name": "Media",
+            "cutoff_2020": 0,
+            "cutoff_2019": 0,
             "link": "www.website.org"
         }
     ]
