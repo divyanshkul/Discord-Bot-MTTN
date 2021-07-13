@@ -53,7 +53,7 @@ def GetCutoff(branch):
 @bot.event
 async def on_ready():
     print("I am alive on the MTTN Server")
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='https://bit.ly/MTTNmovie'))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='https://bit.ly/MTTNMOVIE (link is all caps)'))
 
 
 @bot.command()
