@@ -3,12 +3,14 @@ from discord.ext import commands
 import json
 import pandas as pd
 import tabulate
+from dotenv import load_dotenv
+import os
 from correctbranch import CorrectedBranch
 from models import *
 
 databaseFile = open('database.json',)
 data = json.load(databaseFile)
-
+load_dotenv('.env')
 # TODOs:
 # Return the table when mentioned
 # Category command
@@ -101,7 +103,7 @@ async def on_message(message):
         # await message.channel.send(message.author.mention)
 
 
-bot.run('ODY0MjA4NDI4NjE2MjUzNDkw.YOyG0Q.sVWAj5GgPUrcDt7xMj8sZUnVSq4')
+bot.run(os.getenv('TOKEN'))
 # @bot.event
 # async def on_message(message):
 #     if bot.user.mentioned_in(message):
