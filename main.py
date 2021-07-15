@@ -88,7 +88,7 @@ async def help(ctx):
 
 @bot.command()
 async def laptop(ctx):
-    await ctx.channel.send("Hey!" + ctx.author.mention + "Here is the MTTN's recommended laptop guide: <https://www.manipalthetalk.org/manipal/freshers-guide/mttns-laptop-buying-guide-for-college/>")
+    await ctx.channel.send("Hey! Here is the MTTN's recommended laptop guide: <https://www.manipalthetalk.org/manipal/freshers-guide/mttns-laptop-buying-guide-for-college/>")
     await ctx.channel.send("Also check out our freshers portal which contains all the information that you might need: <https://freshers.manipalthetalk.org/> ")
 
 
