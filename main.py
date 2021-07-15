@@ -82,8 +82,21 @@ async def fact(ctx):
 
 @bot.command()
 async def help(ctx):
-    helpString = f"```Mention me @MTTN Bot to get the branch wise cutoff table \n\n.cutoff branch -> Get the cutoff and course structure \n\nEg: .cutoff EE --> Returns the information about Electrical and Electronics```"
+    helpString = f'```(1) Mention me @MTTN Bot to get the branch wise cutoff table \n\n(2) Use ".cutoff branch" -> Get the cutoff and course structure \nEg: .cutoff EE --> Returns the information about Electrical and Electronics \n\n(3) Use ".guide" -> Freshers guide to Manipal \n\n(4) Use ".laptop" -> Laptop Guide for frehsers  ```'
     await ctx.channel.send("Here is a list of commands that you can use:" + helpString)
+
+
+@bot.command()
+async def laptop(ctx):
+    await ctx.channel.send("Hey! " + ctx.author.mention + "\n")
+    await ctx.channel.send("Here is the MTTN's recommended laptop guide: <https://www.manipalthetalk.org/manipal/freshers-guide/mttns-laptop-buying-guide-for-college/>")
+    await ctx.channel.send("Also check out our freshers portal which contains all the information that you might need: <https://freshers.manipalthetalk.org/> ")
+
+
+@bot.command()
+async def guide(ctx):
+    await ctx.channel.send("Hey! " + ctx.author.mention + "\n")
+    await ctx.channel.send("We have compiled a list of all the resources that you might need as a fresher at Manipal: <https://freshers.manipalthetalk.org/> ")
 
 
 @bot.listen()
