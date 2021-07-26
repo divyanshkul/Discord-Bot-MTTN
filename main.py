@@ -100,15 +100,16 @@ async def guide(ctx):
 
 @bot.listen()
 async def on_message(message):
-    if bot.user.mentioned_in(message):
-        await message.channel.send("Hey! " + message.author.mention + "\nI am your friendly neightbourhood bot. Here is the cutoffs table for the last year for each branch")
-        df = pd.DataFrame.from_dict(data['branches'])
-        df = df.drop(['link', 'cutoff_2019'], axis=1)
-        df.columns = ["Branch Name", "2020 Cutoff"]
-        df.reset_index(drop=True, inplace=True)
-        await message.channel.send(f"```{df}``` \n\n 0 -->  indicates that the no. of seats quota wasn't filled for the particular branch and anyone was eligible for them")
-        await message.channel.send("**NOTE:** The data is not 100\% accurate")
-        await message.channel.send('\nYou can also use the command **".cutoff branchname"** to get the information of a particular branch \nOr use the ".help" command to get help ')
+    for x in message.mentions:
+        if (x == bot.user):
+            await message.channel.send("Hey! " + message.author.mention + "\nI am your friendly neightbourhood bot. Here is the cutoffs table for the last year for each branch")
+            df = pd.DataFrame.from_dict(data['branches'])
+            df = df.drop(['link', 'cutoff_2019'], axis=1)
+            df.columns = ["Branch Name", "2020 Cutoff"]
+            df.reset_index(drop=True, inplace=True)
+            await message.channel.send(f"```{df}``` \n\n 0 -->  indicates that the no. of seats quota wasn't filled for the particular branch and anyone was eligible for them")
+            await message.channel.send("**NOTE:** The data is not 100\% accurate")
+            await message.channel.send('\nYou can also use the command **".cutoff branchname"** to get the information of a particular branch \nOr use the ".help" command to get help ')
 
         # df = pd.json_normalize(data['branches'])
         # print(df)
