@@ -2,72 +2,96 @@
     "branches": [
         {
             "name": "CSE",
+            "3rd_round": "TBA",
+            "2nd_round": 671,
             "cutoff_2020": 1147,
             "cutoff_2019": 1819,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/CSE/BTech-CSE_2020.pdf"
         },
         {
             "name": "IT",
+            "3rd_round": "TBA",
+            "2nd_round": 1764,
             "cutoff_2020": 2234,
             "cutoff_2019": 2732,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ict_courseoutline/Information%20Technology_2018.pdf"
         },
         {
             "name": "CCE",
+            "3rd_round": "TBA",
+            "2nd_round": 2760,
             "cutoff_2020": 3042,
             "cutoff_2019": 3844,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ict_courseoutline/Computer%20and%20Communication_2018.pdf"
         },
         {
             "name": "DSE",
+            "3rd_round": "TBA",
+            "2nd_round": 2551,
             "cutoff_2020": 3653,
             "cutoff_2019": "NEW BRANCH",
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/DSE_CourseStructureMIT2020.pdf"
         },
         {
             "name": "ECE",
+            "3rd_round": "TBA",
+            "2nd_round": 4369,
             "cutoff_2020": 5695,
             "cutoff_2019": 6483,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ece-course-outline/B.Tech%20ECE%20Course%20outline.pdf"
         },
         {
             "name": "EEE",
+            "3rd_round": "TBA",
+            "2nd_round": 8738,
             "cutoff_2020": 10978,
             "cutoff_2019": 13900,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/eee_dept_docs/Electrical%20and%20Electronics_OUTLINE_2020.pdf"
         },
         {
             "name": "Mechatronics",
+            "3rd_round": "TBA",
+            "2nd_round": 16709,
             "cutoff_2020": 17362,
             "cutoff_2019": 14985,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/Mechatronics_Engineering_syllabus/Mechatronics_UG_new.pdf"
         },
         {
             "name": "Mechanical",
+            "3rd_round": "TBA",
+            "2nd_round": 17056,
             "cutoff_2020": 18581,
             "cutoff_2019": 16790,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ipe-rb/Mechanical.pdf"
         },
         {
             "name": "EIE",
+            "3rd_round": "TBA",
+            "2nd_round": 16324,
             "cutoff_2020": 19682,
             "cutoff_2019": 34700,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ice/Electronics%20and%20Instrumentation_2020.pdf"
         },
         {
             "name": "Aeronautical",
+            "3rd_round": "TBA",
+            "2nd_round": 13430,
             "cutoff_2020": 19266,
             "cutoff_2019": 21099,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/B.Tech.%20Aeronautical-Structure.pdf"
         },
         {
             "name": "Automobile",
+            "3rd_round": "TBA",
+            "2nd_round": 22599,
             "cutoff_2020": 26303,
             "cutoff_2019": 30575,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/B.Tech.%20Automobile_Structure.pdf"
         },
         {
             "name": "Biotechnology",
+            "3rd_round": "TBA",
+            "2nd_round": 20503,
             "cutoff_2020": 33875,
             "cutoff_2019": 0,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/biotech-syllabus/B.Tech-%20Biotechnology.pdf"
@@ -75,6 +99,8 @@
         
         {
             "name": "Biomedical",
+            "3rd_round": "TBA",
+            "2nd_round": 31984,
             "cutoff_2020": 0,
             "cutoff_2019": 0,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/biomedical/Biomedical.pdf"
@@ -82,24 +108,32 @@
         
         {
             "name": "Chemical",
+            "3rd_round": "TBA",
+            "2nd_round": 35078,
             "cutoff_2020": 0,
             "cutoff_2019": 0,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/chemical-course-outline/Chemical.pdf"
         },
         {
             "name": "Civil",
+            "3rd_round": "TBA",
+            "2nd_round": 34472,
             "cutoff_2020": 0,
             "cutoff_2019": 0,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/civil_engineering/Civil_New_2018.pdf"
         },
         {
             "name": "Industrial Production",
+            "3rd_round": "TBA",
+            "2nd_round": 34539,
             "cutoff_2020": 0,
             "cutoff_2019": 0,
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/ipe-rb/Industrial%20Production.pdf"
         },
         {
             "name": "Media Technology",
+            "3rd_round": "TBA",
+            "2nd_round": 34740,
             "cutoff_2020": 0,
             "cutoff_2019": 0,
             "link": "https://manipal.edu/mit/program-list/btech/btech-printing-technology.html"
@@ -107,6 +141,8 @@
         
         {
             "name": "AI",
+            "3rd_round": "TBA",
+            "2nd_round": 871,
             "cutoff_2020": "NEW BRANCH",
             "cutoff_2019": "NEW BRANCH",
             "link": "https://manipal.edu/content/dam/manipal/mu/mit/documents/CSE/2021_CSE_AI&ML_Course%20Structure.pdf"

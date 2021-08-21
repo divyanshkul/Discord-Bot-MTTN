@@ -29,17 +29,19 @@ def GetCutoff(branch):
     # print(data['branches'])
     print(len(data['branches']))
     cutoffSearch = 0
+    roundName = ''
     for i in data['branches']:
         # print("Current i is", i)
 
         if(i['name'].lower() == str(branch).lower()):
             # print("if wala i is", i)
             cutoffSearch = i
+            roundName = i['3rd_round']
         # else:
         #     print("asdasdasd i is", i)
 
     if(cutoffSearch != 0):
-        branchString = f"Cutoffs for the branch **{branch.upper()}**: \n\n2020:  **{str(cutoffSearch['cutoff_2020'])}.** \n2019: **{str(cutoffSearch['cutoff_2019'])}.**"
+        branchString = f"Cutoffs for the branch **{branch.upper()}**: \n\n2021 Counselling: \n3rd Round: **{str(cutoffSearch['3rd_round'])}.** \n2nd Round: **{str(cutoffSearch['2nd_round'])}.**   \n\n2020:  **{str(cutoffSearch['cutoff_2020'])}.** \n2019: **{str(cutoffSearch['cutoff_2019'])}.**"
         print(f"<{cutoffSearch['link']}>")
         linkString = f"The course outline for this course can be found at: <{cutoffSearch['link']}>"
         zeroString = f"0 -->  indicates that the no. of seats quota wasn't filled for the particular branch and anyone was eligible for them"
