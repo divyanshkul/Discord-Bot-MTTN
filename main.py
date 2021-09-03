@@ -41,7 +41,7 @@ def GetCutoff(branch):
         #     print("asdasdasd i is", i)
 
     if(cutoffSearch != 0):
-        branchString = f"Cutoffs for the branch **{branch.upper()}**: \n\n2021 Counselling: \n3rd Round: **{str(cutoffSearch['3rd_round'])}.** \n2nd Round: **{str(cutoffSearch['2nd_round'])}.**   \n\n2020:  **{str(cutoffSearch['cutoff_2020'])}.** \n2019: **{str(cutoffSearch['cutoff_2019'])}.**"
+        branchString = f"Cutoffs for the branch **{branch.upper()}**: \n\n2021 Counselling: \n4th Round: **{str(cutoffSearch['4th_round'])}.** \n3rd Round: **{str(cutoffSearch['3rd_round'])}.** \n\n2020:  **{str(cutoffSearch['cutoff_2020'])}.** \n2019: **{str(cutoffSearch['cutoff_2019'])}.**"
         print(f"<{cutoffSearch['link']}>")
         linkString = f"The course outline for this course can be found at: <{cutoffSearch['link']}>"
         zeroString = f"0 -->  indicates that the no. of seats quota wasn't filled for the particular branch and anyone was eligible for them"
