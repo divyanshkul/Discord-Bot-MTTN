@@ -43,10 +43,10 @@ def GetCutoff(branch):
     if(cutoffSearch != 0):
         branchString = f"Cutoffs for the branch **{branch.upper()}**: \n\n2021 Counselling: \n4th Round: **{str(cutoffSearch['4th_round'])}.** \n3rd Round: **{str(cutoffSearch['3rd_round'])}.** \n\n2020:  **{str(cutoffSearch['cutoff_2020'])}.** \n2019: **{str(cutoffSearch['cutoff_2019'])}.**"
         print(f"<{cutoffSearch['link']}>")
-        linkString = f"The course outline for this course can be found at: <{cutoffSearch['link']}>"
+        linkString = f"The course outline for **{branch.upper()}** can be found at: <{cutoffSearch['link']}>"
         zeroString = f"0 -->  indicates that the no. of seats quota wasn't filled for the particular branch and anyone was eligible for them"
         branchMessage = branchString + "\n" + zeroString + "\n\n" + linkString
-        return branchMessage
+        return branchMessage, linkString
 
     else:
         return "Sorry! You have entered an invalid command. Try .help to get the list of commands"
@@ -75,6 +75,14 @@ async def cutoff(ctx, *, arg):
     cutoff = GetCutoff(correctedBranch)
     await ctx.channel.send("Hey! " + ctx.author.mention + "\n")
     await ctx.channel.send(cutoff)
+
+
+@bot.command(name="course")
+async def cutoff(ctx, *, arg):
+    correctedBranch = CorrectedBranch(arg)
+    cutoff, courseString = GetCutoff(correctedBranch)
+    await ctx.channel.send("Hey! " + ctx.author.mention + "\n")
+    await ctx.channel.send(courseString)
 
 
 @bot.command()
