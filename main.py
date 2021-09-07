@@ -72,7 +72,7 @@ async def something(ctx):
 @bot.command(name="cutoff")
 async def cutoff(ctx, *, arg):
     correctedBranch = CorrectedBranch(arg)
-    cutoff = GetCutoff(correctedBranch)
+    cutoff, courseString = GetCutoff(correctedBranch)
     await ctx.channel.send("Hey! " + ctx.author.mention + "\n")
     await ctx.channel.send(cutoff)
 
@@ -92,7 +92,7 @@ async def fact(ctx):
 
 @bot.command()
 async def help(ctx):
-    helpString = f'```(1) Mention me @MTTN Bot to get the branch wise cutoff table \n\n(2) Use ".cutoff branch" -> Get the cutoff and course structure \nEg: .cutoff EE --> Returns the information about Electrical and Electronics \n\n(3) Use ".guide" -> Freshers guide to Manipal \n\n(4) Use ".laptop" -> Laptop Guide for freshers\n\n (5) Use ".course branch" -> Returns the syllabus of that branch ```'
+    helpString = f'```(1) Mention me @MTTN Bot to get the branch wise cutoff table \n\n(2) Use ".cutoff branch" -> Get the cutoff and course structure \nEg: .cutoff EE --> Returns the information about Electrical and Electronics \n\n(3) Use ".guide" -> Freshers guide to Manipal \n\n(4) Use ".laptop" -> Laptop Guide for freshers\n\n(5) Use ".course branch" -> Returns the syllabus of that branch ```'
     await ctx.channel.send("Here is a list of commands that you can use:" + helpString)
 
 
